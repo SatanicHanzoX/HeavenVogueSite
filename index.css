@@ -454,8 +454,8 @@ ul {
   .maincontainer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 10% 1fr 7%;
-        grid-template-columns: 10% 1fr 7%;
+    -ms-grid-columns: 7% 1fr 7%;
+        grid-template-columns: 7% 1fr 7%;
     -ms-grid-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 15% 0.5fr;
         grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 15% 0.5fr;
   }
@@ -479,6 +479,24 @@ ul {
   }
   .linethough {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  
+  .maincontainer {
+    -ms-grid-columns: 7% 1fr 7%;
+    grid-template-columns: 7% 1fr 7%;
+-ms-grid-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 15% 0.5fr;
+    grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 15% 0.5fr;
+  }
+  
+}
+
+@media screen and (max-width: 1800px) {
+
+  .offer {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=index.css.map */
