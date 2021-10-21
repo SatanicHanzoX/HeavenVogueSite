@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navcontainer {
+  margin: 0 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+}
+
+img {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bi {
+  margin: 20px;
+}
+
+ul {
+  margin: 0px;
+}
+
+
+
+.ad {
+  padding: 0.8rem;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 0.55);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.maincontainer {
+  display: grid;
+  grid-template-columns: 11% 1.6fr 10% 3fr 10%;
+  grid-template-rows: 10% 1fr 1.5fr 0.5fr 15%;
+}
+
+.Title {
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+  font-weight: 800;
+  font-size: 60px;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.desc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  font-size: 30px;
+  grid-row: 3/4;
+
+  grid-column: 2/3;
+}
+
+.offer {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 30px;
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+.buybuton {
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 20px;
+    color: white;
+    background: black;
+  grid-row: 5/6;
+  grid-column: 2/3;
+  height: 68%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  border: 0px;
+}
+
+
+
+.buybuton:hover {
+    transform:scale(1.02);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.fashion {
+    position: relative;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  content: cover;
+}
+
+@media screen and (max-width: 900px) {
+  
+    .buybuton {
+      height: 8%;
+      padding: 0px;
+      grid-row: 7/8;
+      grid-column: 2/3;
+      margin: 0px;
+    
+  
+    
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .maincontainer {
+      display: grid;
+      grid-template-columns: 11% 1.6fr 10%;
+      grid-template-rows: 10% 1fr 1.5fr 0.5fr 15% 40% 3fr 3fr;
+    }
+
+  .fashion {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 3;}
+
+    .buybuton {
+      height: 10%;
+        padding: 30px;
+      grid-row: 7/8;
+      grid-column: 2/3;
+      margin: 0px;
+      margin-bottom: px;
+  
+    }
+    .navcontainerbottom {
+      display: flex;
+      flex-direction: column;
+      padding:5px;
+      background: black;
+      
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .maincontainer {
+        display: grid;
+        grid-template-columns: 11% 1.6fr 10%;
+        grid-template-rows: 10% 1fr 1.5fr 0.5fr 15% 30% 1fr 2fr;
+      }
+
+    .fashion {
+      grid-row-start: 5;
+      grid-row-end: 7;
+      grid-column-start: 2;
+      grid-column-end: 3;}
+
+      .buybuton {
+          padding: 30px;
+        grid-row: 7/8;
+        grid-column: 2/3;
+        margin: 0px;
+    
+      }
+}
+
+
+
+
+.LogoBottom {
+    color: white;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: bold;
+
+}
+
+.navcontainerbottom {
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+    background: black;
+    margin-top: 5.2%;
+  }
+  
+  
+  .navigationbottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10% 0 11%;
+  }
+
+  h5 {
+    text-decoration: line-through;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 30px;
+  grid-row: 4/5;
+  grid-column: 2/3;
+margin-left: 280px;  
+  }
+
+  .offer2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 30px;
+  grid-row: 4/5;
+  grid-column: 2/3;
+margin-left: 400px;  
+  }
+
+
+ 
+  

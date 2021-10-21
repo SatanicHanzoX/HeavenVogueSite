@@ -1,0 +1,484 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navcontainer {
+  margin: 0 10% 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3px;
+}
+
+.logobox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  height: 67px;
+}
+
+.logobox img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.yiis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bi {
+  margin: 20px;
+}
+
+ul {
+  margin: 0px;
+}
+
+.ad {
+  padding: 0.8rem;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 0.55);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.LogoBottom {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: bold;
+}
+
+.navcontainerbottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+}
+
+.navigationbottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10% 0 11%;
+}
+
+@media screen and (max-width: 1200px) {
+  .maincontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 11% 0.5fr 10%;
+        grid-template-columns: 11% 0.5fr 10%;
+    -ms-grid-rows: 5% 1fr 1.5fr 0.5fr 15% 3fr 1fr;
+        grid-template-rows: 5% 1fr 1.5fr 0.5fr 15% 3fr 1fr;
+  }
+  .buybuton {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin: 0px;
+  }
+  .navcontainerbottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0px;
+    background: black;
+  }
+  .navigationbottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 10% 0 12%;
+  }
+}
+
+.maincontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 11% 0.6fr 10% 1fr 11%;
+      grid-template-columns: 11% 0.6fr 10% 1fr 11%;
+  -ms-grid-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
+      grid-template-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
+}
+
+.Title {
+  margin-top: 100px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+  font-size: 60px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.desc {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  margin-top: 60px;
+}
+
+.offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
+.linethough {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: line-through;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.buybuton {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+}
+
+.buybuton button {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 550;
+}
+
+.fashion {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2/6;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fashion img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .maincontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 11% 1fr 11%;
+        grid-template-columns: 11% 1fr 11%;
+    -ms-grid-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
+        grid-template-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .desc {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .maincontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5% 1fr 5%;
+        grid-template-columns: 5% 1fr 5%;
+    -ms-grid-rows: 10% 1fr 1fr 1fr 1fr 15% 1fr;
+        grid-template-rows: 10% 1fr 1fr 1fr 1fr 15% 1fr;
+  }
+  .offer {
+    font-size: 20px;
+  }
+  .offer2 {
+    font-size: 20px;
+  }
+  .linethough {
+    font-size: 20px;
+  }
+  .yiis {
+    padding: 0px;
+  }
+  .navcontainer {
+    margin: 0 5% 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 3px;
+  }
+  .navcontainer svg {
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .yiisbottom {
+    padding: 0px;
+  }
+  .navigationbottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 5% 0 10%;
+  }
+  .navigationbottom svg {
+    margin: 0 5px 0px 5px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .LogoBottom {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .maincontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 11% 1fr 11%;
+        grid-template-columns: 11% 1fr 11%;
+    -ms-grid-rows: 15% 0.5fr 0.5fr 0.5fr 0.5fr 15% 1fr;
+        grid-template-rows: 15% 0.5fr 0.5fr 0.5fr 0.5fr 15% 1fr;
+  }
+  .fashion {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fashion img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .buybuton {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Title {
+    margin-top: 100px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+    font-size: 50px;
+  }
+  .desc {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .maincontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% 1fr 7%;
+        grid-template-columns: 10% 1fr 7%;
+    -ms-grid-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 15% 0.5fr;
+        grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 15% 0.5fr;
+  }
+  .offer {
+    font-size: 20px;
+  }
+  .offer2 {
+    font-size: 20px;
+  }
+  .linethough {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .offer {
+    font-size: 15px;
+  }
+  .offer2 {
+    font-size: 15px;
+  }
+  .linethough {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
