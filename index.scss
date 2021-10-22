@@ -186,6 +186,8 @@ ul {
  .buybuton {
    
   width: 100%;
+  height: fit-content;
+  margin-top: 4%;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -224,15 +226,6 @@ ul {
    display: flex;
  }
 
- @media screen and (max-width: 1200px) {
-
-  .maincontainer {
-    display: grid;
-    grid-template-columns: 11% 1fr 11%;
-    grid-template-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
-  }
-  
-}
 
 @media screen and (max-width: 650px) {
   .desc {
@@ -247,7 +240,7 @@ ul {
   .maincontainer {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 10% 1fr 1fr 1fr 1fr 15% 1fr;
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr 15% 1fr ;
   }
 
   .offer {
@@ -312,7 +305,7 @@ ul {
     .maincontainer {
       display: grid;
       grid-template-columns: 11% 1fr 11%;
-      grid-template-rows: 15% 0.5fr 0.5fr 0.5fr 0.5fr 15% 1fr;
+      grid-template-rows: 15% 0.5fr 0.5fr 0.5fr 0.5fr 10% 5%;
     }
     
     .fashion {
@@ -360,7 +353,7 @@ ul {
     .maincontainer {
       display: grid;
       grid-template-columns: 7% 1fr 7%;
-      grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 15% 0.5fr;
+      grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 20% 0.5fr;
     }
 
     .offer {
@@ -387,5 +380,13 @@ ul {
 
   .linethough {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .maincontainer {
+    display: grid;
+    grid-template-columns: 7% 1fr 7%;
+    grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 10% 0.5fr;
   }
 }
