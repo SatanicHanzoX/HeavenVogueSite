@@ -4,11 +4,6 @@ body {
   height: 100vh;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 a,
 a:hover,
 a:visited,
@@ -18,18 +13,22 @@ a:active {
 }
 
 .navcontainer {
-  margin: 0 10% 0 10%;
   display: flex;
   flex-direction: column;
   padding-top: 3px;
+  background-color: white;
 }
-
-.logobox {
+.navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 67px;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+}
+.logobox {
+  display: flex;
+
+  max-width: 250px;
+  max-height: 67px;
 
   img {
     max-width: 100%;
@@ -43,6 +42,7 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
 }
 
 .yiis {
@@ -58,8 +58,6 @@ a:active {
 ul {
   margin: 0px;
 }
-
-
 
 .ad {
   padding: 0.8rem;
@@ -82,23 +80,25 @@ ul {
   display: flex;
   flex-direction: column;
   background: black;
-  
 }
 
 .navigationbottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10% 0 11%;
+  margin: 0 10% 0 10%;
+}
+
+.facebookbottom {
+  margin-right: 0px;
 }
 
 @media screen and (max-width: 1200px) {
   .maincontainer {
     display: grid;
-    grid-template-columns: 11% 0.5fr 10%;
+    grid-template-columns: 10% 0.5fr 10%;
     grid-template-rows: 5% 1fr 1.5fr 0.5fr 15% 3fr 1fr;
   }
-
 
   .buybuton {
     grid-row: 7/8;
@@ -121,70 +121,66 @@ ul {
   }
 }
 
+.maincontainer {
+  display: grid;
+  grid-template-columns: 10% 0.6fr 10% 1fr 10%;
+  grid-template-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
+}
 
-
-  .maincontainer {
-    display: grid;
-    grid-template-columns: 11% 0.6fr 10% 1fr 11%;
-    grid-template-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
-  }
-
-  .Title {
-    margin-top: 100px;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
+.Title {
+  margin-top: 100px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
   font-style: bold;
   font-size: 60px;
-    grid-column: 2/3;
-    grid-row:2/3;
-  }
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
 
-  .desc {
-    height:100%;
-    display: flex;
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
-    grid-column: 2/3;
-    grid-row:3/4;
-    margin-top: 60px;
-  }
+.desc {
+  height: 100%;
+  display: flex;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-top: 60px;
+}
 
-  .offer {
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
-    margin-top: 40px;
-    grid-column: 2/3;
-    grid-row:4/5;
-    justify-content: space-between;
-  }
+.offer {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-content: space-between;
+}
 
-  .offer2 {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px;
-    grid-column: 2/3;
-    grid-row:4/5;
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
-  }
-
- .linethough {
+.offer2 {
   display: flex;
   justify-content: flex-end;
-   text-decoration: line-through;
-   grid-column: 2/3;
-    grid-row:4/5;
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
-    margin: 0;
-    margin-right: 10px;
-   
- }
+  margin: 0px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
 
- .buybuton {
-   
+.linethough {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: line-through;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.buybuton {
   width: 100%;
   height: fit-content;
   margin-top: 4%;
@@ -193,7 +189,7 @@ ul {
   justify-content: center;
   align-items: flex-end;
   grid-column: 2/3;
-  grid-row:5/6;
+  grid-row: 5/6;
 
   button {
     background-color: black;
@@ -203,44 +199,42 @@ ul {
     font-size: 19px;
     font-weight: 550;
   }
- }
+}
 
- .fashion {
-   
-   grid-column: 4/5;
-  grid-row:2/6;
+.fashion {
+  grid-column: 4/5;
+  grid-row: 2/6;
   width: 100%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  
-   
+  justify-content: flex-end;
 
-   img {
-     max-width: 100%;
-     max-height: 100%;
-   }
- }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
 
-
- .price {
-   display: flex;
- }
-
+.price {
+  display: flex;
+}
 
 @media screen and (max-width: 650px) {
   .desc {
     font-size: 25px;
   }
+
+  .Title {
+    font-size: 55px;
+  }
+
 }
 
-
-
 @media screen and (max-width: 550px) {
-
   .maincontainer {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 10% 1fr 1fr 1fr 1fr 15% 1fr ;
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr 15% 1fr;
   }
 
   .offer {
@@ -254,119 +248,104 @@ ul {
   .linethough {
     font-size: 20px;
   }
-  
-    .yiis {
-      padding: 0px;
-    }
-  
-    .navcontainer {
-      margin: 0 5% 0 5%;
-      display: flex;
-      flex-direction: column;
-      padding-top: 3px;
-  
-      svg {
-        margin: 0px;
-        margin-left: 20px;
-      }
-    }
-  
-  
-    .yiisbottom {
-      padding: 0px;
-  
-      
-    }
-    .navigationbottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0 5% 0 10%;
-  
-      svg {
-          margin:0 5px 0px 5px;
-      }
-  
-    }
-  
-  
-     
-    
+
+  .yiis {
+    padding: 0px;
   }
 
-  @media screen and (max-width: 300px) {
-      .LogoBottom {
-          font-size: 90%;
-      }
+  .navcontainer {
+    margin: 0 % 0 5%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+
+    svg {
+      margin: 0px;
+      margin-left: 20px;
+    }
   }
 
-  @media screen and (max-width: 1200px) {
+  .yiisbottom {
+    padding: 0px;
+  }
+  .navigationbottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
 
-    .maincontainer {
-      display: grid;
-      grid-template-columns: 11% 1fr 11%;
-      grid-template-rows: 15% 0.5fr 0.5fr 0.5fr 0.5fr 10% 5%;
+    svg {
+      margin: 0 5px 0px 5px;
     }
-    
-    .fashion {
-   
-      grid-column: 2/3;
-     grid-row:5/6;
-     width: 100%;
-     align-items: center;
-     justify-content: center;
-     
-      
-   
-      img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-    }
+  }
+}
 
-    .buybuton {
-   
-     
-      grid-column: 2/3;
-      grid-row:6/7;
-    
-      
-     }
+@media screen and (max-width: 310px) {
+  .LogoBottom {
+    font-size: 90%;
+  }
+}
 
+@media screen and (max-width: 1200px) {
+  .maincontainer {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 15% 0.5fr 0.5fr 0.5fr 0.5fr 10% 5%;
   }
 
-  @media screen and (max-width: 450px) {
-    .Title {
-      margin-top: 100px;
+  .fashion {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .buybuton {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+
+ 
+  
+}
+
+@media screen and (max-width: 450px) {
+  .Title {
+    margin-top: 100px;
     margin: 0;
     font-family: "Roboto", sans-serif;
-  font-style: bold;
-  font-size: 50px;
-    
-    }
+    font-style: bold;
+    font-size: 45px;
+  }
 
-    .desc {
-      font-size: 20px;
-      margin-top: 20px;
-    }
+  .desc {
+    font-size: 20px;
+    margin-top: 20px;
+  }
 
-    .maincontainer {
-      display: grid;
-      grid-template-columns: 7% 1fr 7%;
-      grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 20% 0.5fr;
-    }
+  .maincontainer {
+    display: grid;
+    grid-template-columns: 7% 1fr 7%;
+    grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 20% 0.5fr;
+  }
 
-    .offer {
-      font-size: 20px;
-    }
+  .offer {
+    font-size: 20px;
+  }
 
-    .offer2 {
-      font-size: 20px;
-    }
+  .offer2 {
+    font-size: 20px;
+  }
 
-    .linethough {
-      font-size: 20px;
-    }
+  .linethough {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -386,7 +365,7 @@ ul {
 @media screen and (max-width: 650px) {
   .maincontainer {
     display: grid;
-    grid-template-columns: 7% 1fr 7%;
+    grid-template-columns: 10% 1fr 10%;
     grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 10% 0.5fr;
   }
 }

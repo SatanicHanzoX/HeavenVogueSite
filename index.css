@@ -4,11 +4,6 @@ body {
   height: 100vh;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 a,
 a:hover,
 a:visited,
@@ -18,7 +13,6 @@ a:active {
 }
 
 .navcontainer {
-  margin: 0 10% 0 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,20 +21,28 @@ a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 3px;
+  background-color: white;
 }
 
-.logobox {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 250px;
-  height: 67px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10% 0 10%;
+}
+
+.logobox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 250px;
+  max-height: 67px;
 }
 
 .logobox img {
@@ -61,6 +63,7 @@ a:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
 }
 
 .yiis {
@@ -121,15 +124,19 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 10% 0 11%;
+  margin: 0 10% 0 10%;
+}
+
+.facebookbottom {
+  margin-right: 0px;
 }
 
 @media screen and (max-width: 1200px) {
   .maincontainer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 11% 0.5fr 10%;
-        grid-template-columns: 11% 0.5fr 10%;
+    -ms-grid-columns: 10% 0.5fr 10%;
+        grid-template-columns: 10% 0.5fr 10%;
     -ms-grid-rows: 5% 1fr 1.5fr 0.5fr 15% 3fr 1fr;
         grid-template-rows: 5% 1fr 1.5fr 0.5fr 15% 3fr 1fr;
   }
@@ -173,8 +180,8 @@ ul {
 .maincontainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 11% 0.6fr 10% 1fr 11%;
-      grid-template-columns: 11% 0.6fr 10% 1fr 11%;
+  -ms-grid-columns: 10% 0.6fr 10% 1fr 10%;
+      grid-template-columns: 10% 0.6fr 10% 1fr 10%;
   -ms-grid-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
       grid-template-rows: 15% 2fr 3fr 2fr 2.53fr 15%;
 }
@@ -307,12 +314,15 @@ ul {
   -ms-grid-row-span: 4;
   grid-row: 2/6;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .fashion img {
@@ -329,6 +339,9 @@ ul {
 @media screen and (max-width: 650px) {
   .desc {
     font-size: 25px;
+  }
+  .Title {
+    font-size: 55px;
   }
 }
 
@@ -354,7 +367,7 @@ ul {
     padding: 0px;
   }
   .navcontainer {
-    margin: 0 5% 0 5%;
+    margin: NaN 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -381,14 +394,14 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0 5% 0 10%;
+    margin: 0 10% 0 10%;
   }
   .navigationbottom svg {
     margin: 0 5px 0px 5px;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 310px) {
   .LogoBottom {
     font-size: 90%;
   }
@@ -398,8 +411,8 @@ ul {
   .maincontainer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 11% 1fr 11%;
-        grid-template-columns: 11% 1fr 11%;
+    -ms-grid-columns: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 10%;
     -ms-grid-rows: 15% 0.5fr 0.5fr 0.5fr 0.5fr 10% 5%;
         grid-template-rows: 15% 0.5fr 0.5fr 0.5fr 0.5fr 10% 5%;
   }
@@ -438,7 +451,7 @@ ul {
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-style: bold;
-    font-size: 50px;
+    font-size: 45px;
   }
   .desc {
     font-size: 20px;
@@ -479,8 +492,8 @@ ul {
   .maincontainer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 7% 1fr 7%;
-        grid-template-columns: 7% 1fr 7%;
+    -ms-grid-columns: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 10%;
     -ms-grid-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 10% 0.5fr;
         grid-template-rows: 10% 0.5fr 0.8fr 0.5fr 1fr 10% 0.5fr;
   }

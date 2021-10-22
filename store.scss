@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(245, 245, 245);
+  height: 100vh;
+  background-color:whitesmoke ;
 }
 
 a,
@@ -18,19 +19,37 @@ a:active {
   padding-top: 3px;
   background-color: white;
 }
-
-img {
-  width: 250px;
+.navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+}
+.logobox {
+  display: flex;
+
+  max-width: 250px;
+  max-height: 67px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+  }
 }
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10% 0 10%;
+  background-color: white;
+}
+
+.yiis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bi {
@@ -41,25 +60,12 @@ ul {
   margin: 0px;
 }
 
-@media screen and (max-width: 560px) {
-  
-  ul {
-    padding: 0px;
-  }
-  img {
-    width: 170px;
-  }
-  .bi {
-    margin: 0 10px 0 10px;
-    width: 20px;
-  }
-}
-
 .ad {
   padding: 0.8rem;
   text-align: center;
-  background-color: black;
-
+  background-color: rgba(0, 0, 0, 1);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   font-family: sans-serif;
   font-size: 17px;
   color: white;
@@ -79,7 +85,7 @@ ul {
 .maincontainer {
   background-color: white;
   height: auto;
-  margin: 0 11% 0 11%;
+  margin: 0 10% 0 10%;
   border-radius: 25px;
 }
 
@@ -113,6 +119,10 @@ margin:0 0 0 30px;
   font-family: "Roboto", sans-serif;
   margin: 0px;
 
+}
+
+.facebookbottom {
+  margin-right: 0px;
 }
 
 
@@ -539,6 +549,41 @@ margin-left: 280px;
         }
       }
       @media screen and (max-width:560px){
+        .yiis {
+          padding: 0px;
+        }
+      
+        .navcontainer {
+    
+          display: flex;
+          flex-direction: column;
+          padding-top: 3px;
+      
+          svg {
+            margin: 0px;
+            margin-left: 20px;
+          }
+        }
+      
+      
+        .yiisbottom {
+          padding: 0px;
+      
+          
+        }
+        .navigationbottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0 10% 0 10%;
+      
+          svg {
+              margin:0 5px 0px 5px;
+          }
+      
+        }
+      
+      
         .arrowbox {
           svg {width: 45px;
           height: 45px;}
