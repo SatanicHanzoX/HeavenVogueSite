@@ -354,15 +354,6 @@ ul {
 }
 
 @media screen and (max-width: 550px) {
-  .offer {
-    font-size: 20px;
-  }
-  .offer2 {
-    font-size: 20px;
-  }
-  .linethough {
-    font-size: 20px;
-  }
   .yiis {
     padding: 0px;
   }
