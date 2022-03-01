@@ -26,12 +26,12 @@ body {
   min-height: 100vh;
 }
 
-.russianflag {
+.chineseflag {
   width: 50px;
   border-radius: 5px;
 }
 
-.russianbox {
+.chinesebox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +40,7 @@ body {
           justify-content: center;
   gap: 30px;
 }
-.russianbox h3 {
+.chinesebox h3 {
   width: 60%;
   color: white;
   font-family: "Source Sans Pro", sans-serif;
